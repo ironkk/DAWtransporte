@@ -17,7 +17,7 @@ public class Camion extends Vehiculo {
 
     @Override
     public double calcularAlquiler(int dias) {
-        return (dias) + 40;
+        return super.calcularAlquiler(dias) + 40;
     }
 
 }

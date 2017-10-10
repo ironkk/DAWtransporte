@@ -29,7 +29,7 @@ public class Coche extends Vehiculo {
  // tambien podriamos haber puesto la clase vehiculo sin ser abstracta y acceder al metodo con super.(nombredelmetodo)(operaciones)
     @Override
     public double calcularAlquiler(int dias) {
-        return (dias)+(1.5*plazas)*dias;
+        return super.calcularAlquiler(dias)+(1.5*plazas)*dias;
     }
 
  
